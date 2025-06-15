@@ -20,11 +20,11 @@ export default function ChiSiamo() {
         </div>
 
         {/* Градиент поверх */}
-        <div className="absolute inset-0 z-10 bg-[#E3D7D7] lg:bg-gradient-to-tr from-[#242F35]/80 to-[#EAEFF3]/90" />
+        <div className="absolute inset-0 z-10 bg-gradient-to-tr from-[#242F35]/50 to-[#EAEFF3]/20" />
 
         {/* Контент */}
         <div className="relative z-20 container mx-auto px-4 py-16">
-          <div className="bg-white/80 backdrop-blur-md rounded-xl shadow-xl p-8 md:p-12 max-w-6xl mx-auto">
+          <div className="bg-white/80 backdrop-blur-md rounded-xl shadow-xl p-8 md:p-12 max-w-5xl mr-auto">
             <h1 className="text-3xl md:text-5xl font-extrabold text-[#242F35] mb-10 text-center md:text-left">
               Vantaggi del marchio <span className="text-red-600">SENSO</span>
             </h1>
