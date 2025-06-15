@@ -10,7 +10,17 @@ export default function AboutSensoPage() {
       <Header />
       <div className="relative min-h-screen overflow-hidden">
         {/* Фоновое изображение */}
-        <div className="hidden md:block absolute inset-y-0 mt-auto right-0 z-0 w-1/2 max-h-[800px] pointer-events-none">
+        {/* <div
+          className="hidden md:block absolute inset-y-0 right-0 z-10 w-1/2 max-h-[700px] pointer-events-none"
+          style={{
+            WebkitMaskImage: 'linear-gradient(to left, black, transparent)',
+            maskImage: 'linear-gradient(to left, black, transparent)',
+            WebkitMaskRepeat: 'no-repeat',
+            maskRepeat: 'no-repeat',
+            WebkitMaskSize: '100% 100%',
+            maskSize: '100% 100%',
+          }}
+        >
           <Image
             src="/images/senso-bg.jpg"
             alt="SENSO background"
@@ -18,14 +28,14 @@ export default function AboutSensoPage() {
             className="object-cover object-right"
             priority
           />
-        </div>
+        </div> */}
 
         {/* Градиент поверх */}
-        <div className="absolute inset-0 z-10 bg-gradient-to-tr from-[#242F35]/50 to-[#EAEFF3]/20" />
+        <div className="absolute inset-0 z-15 bg-gradient-to-r from-gray-300 to-gray-100" />
 
         {/* Контентная карточка */}
-        <div className="relative z-20 container mx-auto px-4 py-16">
-          <div className="bg-white/80 backdrop-blur-md rounded-xl shadow-xl p-8 md:p-12 max-w-4xl">
+        <div className="relative z-20 container mx-auto px-4 py-10">
+          <div className="bg-white/80 mx-auto backdrop-blur-md rounded-xl shadow-xl p-8 md:p-12 max-w-5xl">
             <h1 className="text-4xl md:text-5xl font-extrabold text-[#242F35] mb-6">
               TM <span className="text-red-600">SENSO</span>
             </h1>
@@ -71,7 +81,7 @@ export default function AboutSensoPage() {
             </ul>
           </div>
         </div>
-        <div className="relative z-20 container mx-auto px-4 py-16">
+        <div className="relative z-20 container mx-auto px-4 py-10">
           <BoardSlider />
         </div>
       </div>

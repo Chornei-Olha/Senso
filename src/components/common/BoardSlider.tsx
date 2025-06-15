@@ -62,7 +62,7 @@ export default function BoardSlider() {
   const [selectedMember, setSelectedMember] = useState<null | (typeof boardMembers)[0]>(null);
 
   return (
-    <div id="slider1" className="w-full text-center relative py-5 lg:mb-[500px]">
+    <div id="slider1" className="w-full text-center relative">
       <h2 className="text-[36px] sm:text-[48px] md:text-[56px] font-medium font-dm mb-8">
         Lorem ipsum dolor
       </h2>

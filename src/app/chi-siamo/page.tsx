@@ -9,7 +9,17 @@ export default function ChiSiamo() {
       <Header />
       <div className="relative min-h-screen overflow-hidden">
         {/* Фон */}
-        <div className="hidden md:block absolute inset-y-0 right-0 z-0 w-1/2 max-w-[600px] pointer-events-none">
+        <div
+          className="hidden md:block absolute inset-y-0 right-0 z-10 w-1/2 max-w-[600px] pointer-events-none"
+          style={{
+            WebkitMaskImage: 'linear-gradient(to left, black, transparent)',
+            maskImage: 'linear-gradient(to left, black, transparent)',
+            WebkitMaskRepeat: 'no-repeat',
+            maskRepeat: 'no-repeat',
+            WebkitMaskSize: '100% 100%',
+            maskSize: '100% 100%',
+          }}
+        >
           <Image
             src="/images/senso-bg.jpg"
             alt="SENSO background"
@@ -20,7 +30,7 @@ export default function ChiSiamo() {
         </div>
 
         {/* Градиент поверх */}
-        <div className="absolute inset-0 z-10 bg-gradient-to-tr from-[#242F35]/50 to-[#EAEFF3]/20" />
+        <div className="absolute inset-0 z-15 bg-gradient-to-r from-gray-300 to-gray-100" />
 
         {/* Контент */}
         <div className="relative z-20 container mx-auto px-4 py-16">

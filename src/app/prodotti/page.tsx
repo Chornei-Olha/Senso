@@ -180,7 +180,7 @@ export default function Prodotti() {
   return (
     <div>
       <Header />
-      <div className="relative min-h-screen overflow-hidden bg-gradient-to-tr from-[#242F35]/50 to-[#EAEFF3]/20">
+      <div className="relative min-h-screen overflow-hidden bg-gradient-to-r from-gray-300 to-gray-100">
         <div className="container mx-auto px-4 py-16 space-y-24">
           {products.map((product) => (
             <section id={product.id} key={product.id} className="scroll-mt-24">
