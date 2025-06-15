@@ -7,8 +7,9 @@ export const viewport = {
 };
 
 export const metadata = {
-  title: 'ReinEx',
-  description: 'Ihre vertrauenswürdige Reinigungsfirma mit System, Plan und VerantwortungS',
+  title: 'Senso',
+  description:
+    'TM SENSO – un marchio di nastri da mascheratura di alta qualità, prodotto in Italia da PPM INDUSTRIES SpA',
   icons: {
     icon: [{ url: '/favicon.png', type: 'image/x-icon' }],
   },
@@ -20,12 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>
-        {children}
-        {/* <script id="dhws-errorTracker" src="/dhws-error-tracker.js"></script>
-  <script id="dhws-elementInspector" src="/dhws-web-inspector.js"></script> */}
-      </body>
+    <html lang="it">
+      <body>{children}</body>
     </html>
   );
 }

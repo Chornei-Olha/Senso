@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import ServiceForm from '@/components/common/ServiceForm';
 
 const Footer: React.FC = () => {
   const [openForm, setOpenForm] = useState(false);
@@ -27,7 +26,6 @@ const Footer: React.FC = () => {
               >
                 Kontakt
               </button>
-              {openForm && <ServiceForm onClose={() => setOpenForm(false)} />}
             </div>
           </div>
         </div>
