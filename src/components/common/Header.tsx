@@ -59,28 +59,28 @@ const Header: React.FC = () => {
                 <a
                   href="/prodotti#bianco"
                   onClick={handleLinkClick}
-                  className="block px-4 py-2 text-sm text-[#244754] hover:bg-gray-200"
+                  className="block px-4 py-2 text-sm text-[#244754] hover:text-[#35844a]"
                 >
                   SENSO BIANCO - AUTO + 80°C
                 </a>
                 <a
                   href="/prodotti#marrone"
                   onClick={handleLinkClick}
-                  className="block px-4 py-2 text-sm text-[#244754] hover:bg-gray-200"
+                  className="block px-4 py-2 text-sm text-[#244754] hover:text-[#35844a]"
                 >
                   SENSO MARRONE – AUTO + 110°C
                 </a>
                 <a
                   href="/prodotti#rossa"
                   onClick={handleLinkClick}
-                  className="block px-4 py-2 text-sm text-[#244754] hover:bg-gray-200"
+                  className="block px-4 py-2 text-sm text-[#244754] hover:text-[#35844a]"
                 >
                   SENSO ROSSA – AUTO + 120°C
                 </a>
                 <a
                   href="/prodotti#oro"
                   onClick={handleLinkClick}
-                  className="block px-4 py-2 text-sm text-[#244754] hover:bg-gray-200"
+                  className="block px-4 py-2 text-sm text-[#244754] hover:text-[#35844a]"
                 >
                   SENSO ORO - AUTO + 130°C
                 </a>
@@ -108,7 +108,7 @@ const Header: React.FC = () => {
               alt="Menu"
               width={28}
               height={28}
-              className="text-[#508FA8]"
+              className="text-[#244754]"
             />
           </button>
         </div>
@@ -121,7 +121,7 @@ const Header: React.FC = () => {
             <Link
               href="/"
               onClick={() => setIsMenuOpen(false)}
-              className="text-lg font-semibold text-[#508FA8] hover:text-[#4d8fa7] transition-colors"
+              className="text-lg font-semibold text-[#244754] hover:text-[#35844a] transition-colors"
             >
               BRAND
             </Link>
@@ -129,7 +129,7 @@ const Header: React.FC = () => {
             <div>
               <button
                 onClick={() => setIsMobileDropdownOpen((prev) => !prev)}
-                className="flex justify-between items-center w-full text-lg text-[#508FA8] hover:text-[#4d8fa7] transition-colors"
+                className="flex justify-between items-center w-full text-lg text-[#244754] hover:text-[#35844a] transition-colors"
               >
                 PRODOTTI
                 <span
@@ -147,7 +147,7 @@ const Header: React.FC = () => {
                       setIsMenuOpen(false);
                       setIsMobileDropdownOpen(false);
                     }}
-                    className="block text-sm text-[#244754] hover:text-[#4d8fa7]"
+                    className="block text-sm text-[#244754] hover:text-[#35844a]"
                   >
                     SENSO BIANCO - AUTO + 80°C
                   </a>
@@ -157,7 +157,7 @@ const Header: React.FC = () => {
                       setIsMenuOpen(false);
                       setIsMobileDropdownOpen(false);
                     }}
-                    className="block text-sm text-[#244754] hover:text-[#4d8fa7]"
+                    className="block text-sm text-[#244754] hover:text-[#35844a]"
                   >
                     SENSO MARRONE – AUTO + 110°C
                   </a>
@@ -167,7 +167,7 @@ const Header: React.FC = () => {
                       setIsMenuOpen(false);
                       setIsMobileDropdownOpen(false);
                     }}
-                    className="block text-sm text-[#244754] hover:text-[#4d8fa7]"
+                    className="block text-sm text-[#244754] hover:text-[#35844a]"
                   >
                     SENSO ROSSA – AUTO + 120°C
                   </a>
@@ -177,7 +177,7 @@ const Header: React.FC = () => {
                       setIsMenuOpen(false);
                       setIsMobileDropdownOpen(false);
                     }}
-                    className="block text-sm text-[#244754] hover:text-[#4d8fa7]"
+                    className="block text-sm text-[#244754] hover:text-[#35844a]"
                   >
                     SENSO ORO - AUTO + 130°C
                   </a>
@@ -188,7 +188,7 @@ const Header: React.FC = () => {
             <Link
               href="/chi-siamo"
               onClick={() => setIsMenuOpen(false)}
-              className="text-lg text-[#508FA8] hover:text-[#4d8fa7] transition-colors"
+              className="text-lg text-[#244754] hover:text-[#35844a] transition-colors"
             >
               CHI SIAMO{' '}
             </Link>
