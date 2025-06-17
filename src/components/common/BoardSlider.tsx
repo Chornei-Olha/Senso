@@ -12,46 +12,46 @@ import 'swiper/css';
 const boardMembers = [
   {
     id: 1,
-    photo: '/assets/gleb.jpeg',
+    photo: '/images/banner01.jpg',
     name: 'Lorem ipsum dolor',
     position: 'Lorem ipsum dolor',
-    badge: 'Lorem ipsum dolor',
+    // badge: 'Lorem ipsum dolor',
     description: `Lorem ipsum dolor\n
     Lorem ipsum dolor\n`,
   },
   {
     id: 2,
-    photo: '/assets/begeza.jpeg',
+    photo: '/images/banner02.jpg',
     name: 'Lorem ipsum dolor',
     position: 'Lorem ipsum dolor',
-    badge: 'Lorem ipsum dolor',
+    // badge: 'Lorem ipsum dolor',
     description: `Lorem ipsum dolor\n
     Lorem ipsum dolor\n`,
   },
   {
     id: 3,
-    photo: '/assets/Bondar.jpg',
+    photo: '/images/banner03.jpg',
     name: 'Lorem ipsum dolor',
     position: 'Lorem ipsum dolor',
-    badge: 'Lorem ipsum dolor',
+    // badge: 'Lorem ipsum dolor',
     description: `Lorem ipsum dolor\n
     Lorem ipsum dolor\n`,
   },
   {
     id: 4,
-    photo: '/assets/begezao.jpg',
+    photo: '/images/banner04.jpeg',
     name: 'Lorem ipsum dolor',
     position: 'Lorem ipsum dolor',
-    badge: 'Lorem ipsum dolor',
+    // badge: 'Lorem ipsum dolor',
     description: `Lorem ipsum dolor\n
     Lorem ipsum dolor\n`,
   },
   {
     id: 5,
-    photo: '/assets/begezao.jpg',
+    photo: '/images/banner05.jpeg',
     name: 'Lorem ipsum dolor',
     position: 'Lorem ipsum dolor',
-    badge: 'Lorem ipsum dolor',
+    // badge: 'Lorem ipsum dolor',
     description: `Lorem ipsum dolor\n
     Lorem ipsum dolor\n`,
   },
@@ -148,25 +148,25 @@ export default function BoardSlider() {
           spaceBetween={24}
           breakpoints={{
             320: { slidesPerView: 1 },
-            640: { slidesPerView: 2 },
-            1024: { slidesPerView: 4 },
+            640: { slidesPerView: 1 },
+            1024: { slidesPerView: 3 },
           }}
         >
           {boardMembers.map((member) => (
             <SwiperSlide key={member.id}>
-              <div className="h-full flex flex-col justify-between p-4 border rounded-xl shadow-md bg-white min-h-[620px] max-h-[620px]">
+              <div className="h-full flex flex-col justify-between p-4 border rounded-xl shadow-md bg-white">
                 <div className="relative mb-2">
                   <Image
                     src={member.photo}
                     alt={member.name}
-                    width={300}
-                    height={160}
-                    className="w-full h-96 object-cover rounded-lg"
+                    width={700}
+                    height={300}
+                    className="w-full object-contain rounded-lg"
                     priority
                   />
-                  <div className="absolute bottom-2 right-2 bg-[#0103B8] text-white text-sm font-semibold px-3 py-1 rounded-full shadow-sm">
+                  {/* <div className="absolute bottom-2 right-2 bg-[#0103B8] text-white text-sm font-semibold px-3 py-1 rounded-full shadow-sm">
                     {member.badge}
-                  </div>
+                  </div> */}
                 </div>
                 <h3 className="font-bold font-dm text-[20px]">{member.name}</h3>
                 <p className="font-bold font-inter text-[16px] text-[#09234B] mt-[15px]">
