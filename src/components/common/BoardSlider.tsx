@@ -13,47 +13,42 @@ const boardMembers = [
   {
     id: 1,
     photo: '/images/banner01.jpg',
-    name: 'Lorem ipsum dolor',
-    position: 'Lorem ipsum dolor',
+    name: 'COMPETENZA',
+    // position: 'Lorem ipsum dolor',
     // badge: 'Lorem ipsum dolor',
-    description: `Lorem ipsum dolor\n
-    Lorem ipsum dolor\n`,
+    description: `I nastri da mascheratura SENSO sono certificati FSC® e PEFC, a garanzia del rispetto dei più alti standard di qualità.`,
   },
   {
     id: 2,
     photo: '/images/banner02.jpg',
-    name: 'Lorem ipsum dolor',
-    position: 'Lorem ipsum dolor',
+    name: 'EFFICIENZA',
+    // position: 'Lorem ipsum dolor',
     // badge: 'Lorem ipsum dolor',
-    description: `Lorem ipsum dolor\n
-    Lorem ipsum dolor\n`,
+    description: `La gamma SENSO è progettata appositamente per soddisfare tutte le esigenze del settore automobilistico.`,
   },
   {
     id: 3,
     photo: '/images/banner03.jpg',
-    name: 'Lorem ipsum dolor',
-    position: 'Lorem ipsum dolor',
+    name: 'PROFESSIONALITÀ',
+    // position: 'Lorem ipsum dolor',
     // badge: 'Lorem ipsum dolor',
-    description: `Lorem ipsum dolor\n
-    Lorem ipsum dolor\n`,
+    description: `Ogni prodotto SENSO viene sottoposto a test specifici, in base ai quali viene determinata la sua destinazione d'uso.`,
   },
   {
     id: 4,
     photo: '/images/banner04.jpeg',
-    name: 'Lorem ipsum dolor',
-    position: 'Lorem ipsum dolor',
+    name: 'ORIENTAMENTO AL CLIENTE',
+    // position: 'Lorem ipsum dolor',
     // badge: 'Lorem ipsum dolor',
-    description: `Lorem ipsum dolor\n
-    Lorem ipsum dolor\n`,
+    description: `Il team SENSO è aperto alla collaborazione ed è sempre pronto a offrire soluzioni pronte per la tua attività.`,
   },
   {
     id: 5,
     photo: '/images/banner05.jpeg',
-    name: 'Lorem ipsum dolor',
-    position: 'Lorem ipsum dolor',
+    name: 'FLESSIBILITÀ',
+    // position: 'Lorem ipsum dolor',
     // badge: 'Lorem ipsum dolor',
-    description: `Lorem ipsum dolor\n
-    Lorem ipsum dolor\n`,
+    description: `La linea SENSO è pensata per adattarsi con facilità a diverse superfici e contesti di utilizzo, garantendo sempre risultati precisi e professionali.`,
   },
 ];
 
@@ -63,10 +58,6 @@ export default function BoardSlider() {
 
   return (
     <div id="slider1" className="w-full text-center relative">
-      <h2 className="text-[36px] sm:text-[48px] md:text-[56px] font-medium font-dm mb-8">
-        Lorem ipsum dolor
-      </h2>
-
       <div className="relative max-w-7xl mx-auto">
         {/* Стрелки (десктоп) */}
         <button
@@ -169,13 +160,13 @@ export default function BoardSlider() {
                   </div> */}
                 </div>
                 <h3 className="font-bold font-dm text-[20px]">{member.name}</h3>
-                <p className="font-bold font-inter text-[16px] text-[#09234B] mt-[15px]">
+                {/* <p className="font-bold font-inter text-[16px] text-[#09234B] mt-[15px]">
                   {member.position}
-                </p>
+                </p> */}
                 <p className="font-regular font-inter text-[16px] mt-[15px] flex-grow line-clamp-3">
                   {member.description}
                 </p>
-                <div className="mt-[20px] flex justify-center">
+                {/* <div className="mt-[20px] flex justify-center">
                   <Button
                     className="max-w-[180px] px-[40px] py-[10px] font-bold font-inter text-[16px] bg-black text-white rounded-3xl"
                     onClick={() => {
@@ -185,7 +176,7 @@ export default function BoardSlider() {
                   >
                     more...
                   </Button>
-                </div>
+                </div> */}
               </div>
             </SwiperSlide>
           ))}
