@@ -135,8 +135,16 @@ const Header: React.FC = () => {
             >
               BRAND
             </Link>
+
+            <Link
+              href="/prodotti"
+              onClick={() => setIsMenuOpen(false)}
+              className="text-lg font-semibold text-[#244754] hover:text-[#35844a] transition-colors"
+            >
+              PRODOTTI
+            </Link>
             {/* Dienstleistungen Dropdown (Mobile) */}
-            <div>
+            {/* <div>
               <button
                 onClick={() => setIsMobileDropdownOpen((prev) => !prev)}
                 className="flex justify-between items-center w-full text-lg text-[#244754] hover:text-[#35844a] transition-colors"
@@ -193,7 +201,7 @@ const Header: React.FC = () => {
                   </a>
                 </div>
               )}
-            </div>
+            </div> */}
 
             <Link
               href="/chi-siamo"
