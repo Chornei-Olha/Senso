@@ -18,7 +18,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="container px-5 lg:px-10 shadow-sm mt-[10px] py-4 relative z-50">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <div className="mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
           <Link href="/">
@@ -44,8 +44,8 @@ const Header: React.FC = () => {
           >
             BRAND
           </Link>
-          <div className="relative">
-            {/* Кнопка-заголовок */}
+
+          {/* <div className="relative">
             <button
               onClick={() => setIsOpen((prev) => !prev)}
               className="text-lg text-[#244754] hover:text-[#35844a] transition-colors flex items-center"
@@ -53,7 +53,6 @@ const Header: React.FC = () => {
               PRODOTTI ▾
             </button>
 
-            {/* Выпадающее меню */}
             {isOpen && (
               <div className="absolute left-0 mt-2 bg-white shadow-lg rounded-md z-10 min-w-[300px]">
                 <a
@@ -86,7 +85,18 @@ const Header: React.FC = () => {
                 </a>
               </div>
             )}
-          </div>
+          </div> */}
+
+          <Link
+            href="/prodotti"
+            className={`text-lg transition-colors ${
+              pathname === '/prodotti'
+                ? 'text-[#244754] font-semibold'
+                : 'text-[#244754] hover:text-[#35844a]'
+            }`}
+          >
+            PRODOTTI{' '}
+          </Link>
 
           <Link
             href="/chi-siamo"

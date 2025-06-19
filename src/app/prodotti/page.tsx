@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import Header from '@/components/common/Header';
 import ProductTable from '@/components/common/ProductTable';
@@ -178,6 +180,20 @@ export default function Prodotti() {
   return (
     <div>
       <Header />
+      <nav className="bg-white shadow sticky top-0 z-50">
+        <div className="container px-5 lg:px-10 mx-auto py-3 flex flex-wrap gap-4 justify-center md:justify-end">
+          {products.map((product) => (
+            <a
+              key={product.id}
+              href={`#${product.id}`}
+              className="text-red-600 hover:text-red-800 font-semibold transition-colors"
+            >
+              {product.name.split(' ')[1]}
+            </a>
+          ))}
+        </div>
+      </nav>
+
       <div className="relative min-h-screen overflow-hidden bg-gradient-to-r from-gray-300 to-gray-100">
         <div className="container mx-auto px-4 py-16 space-y-24">
           {products.map((product) => (
