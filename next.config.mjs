@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   productionBrowserSourceMaps: true,
-  allowedDevOrigins:['.amazonaws.com', '.builtwithrocket.new'],
+  allowedDevOrigins: ['.amazonaws.com', '.builtwithrocket.new'],
   distDir: process.env.DIST_DIR || '.next',
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -10,9 +14,11 @@ const nextConfig = {
     config.module.rules.push({
       test: /\.(jsx|tsx)$/,
       exclude: [/node_modules/],
-      use: [{
-        loader: '@dhiwise/component-tagger/nextLoader',
-      }],
+      use: [
+        {
+          loader: '@dhiwise/component-tagger/nextLoader',
+        },
+      ],
     });
     return config;
   },
