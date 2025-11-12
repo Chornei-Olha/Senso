@@ -10,8 +10,11 @@ export const metadata = {
   title: 'Senso',
   description:
     'TM SENSO – un marchio di nastri da mascheratura di alta qualità, prodotto in Italia da PPM INDUSTRIES SpA',
+  // icons: {
+  //   icon: [{ url: '/favicon.png', type: 'image/png' }],
+  // },
   icons: {
-    icon: [{ url: '/favicon.png', type: 'image/x-icon' }],
+    icon: '/favicon.png',
   },
 };
 
