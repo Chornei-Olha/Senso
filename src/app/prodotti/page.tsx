@@ -8,6 +8,7 @@ const products = [
   {
     id: 'bianco',
     name: 'SENSO BIANCO - AUTO +80°C',
+    photo: '/images/prodotti_bianco.webp',
     usage: 'Protezione, fissaggio, mascheratura',
     description: [
       'Nastro leggero e maneggevole per lavori di base in officina.',
@@ -52,6 +53,7 @@ const products = [
   {
     id: 'marrone',
     name: 'SENSO MARRONE - AUTO +110°C',
+    photo: '/images/prodotti_marrone.webp',
     priceTier: 'Fascia di prezzo: Media',
     usage: 'Uso professionale in officine',
     description: [
@@ -97,6 +99,7 @@ const products = [
   {
     id: 'rossa',
     name: 'SENSO ROSSA - AUTO +120°C',
+    photo: '/images/prodotti_rossa.webp',
     priceTier: 'Fascia di prezzo: Premium',
     usage: 'Cabine di verniciatura, levigatura e lucidatura',
     description: [
@@ -137,6 +140,7 @@ const products = [
   {
     id: 'oro',
     name: 'SENSO ORO - AUTO +130°C',
+    photo: '/images/prodotti_oro.webp',
     priceTier: 'Fascia di prezzo: Lusso',
     usage: 'Per le applicazioni più impegnative',
     description: [
@@ -201,8 +205,15 @@ export default function Prodotti() {
               <div className="flex flex-col md:flex-row gap-8 items-start">
                 {/* Заглушка под изображение */}
                 <div className="w-full md:w-1/3 h-64 bg-gray-300 rounded-2xl flex items-center justify-center text-gray-600 text-xl font-medium">
-                  {/* Можно заменить на <Image ... /> */}
-                  Immagine {product.name.split(' ')[1]}
+                  <Image
+                    src={product.photo}
+                    alt={product.name.split(' ')[1]}
+                    width={700}
+                    height={300}
+                    className="w-full object-contain rounded-lg"
+                    priority
+                  />{' '}
+                  {/* Immagine {product.name.split(' ')[1]} */}
                 </div>
 
                 {/* Контент */}
